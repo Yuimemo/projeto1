@@ -1,0 +1,125 @@
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #182c61;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/
+header {
+  padding: 16px 0;
+  background-color: #182c61;
+  color: aliceblue;
+  font-size: 24px; /* Corrigido valor sem unidade */
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1190px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Layout do header e sections */
+header .container,
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo de listas de marcas */
+.brand-list img {
+  height: 24px;
+}
+
+.brand-list li {
+  display: inline;
+  margin-right: 8px;
+}
+
+/* Seções gerais */
+section {
+  padding: 24px 0;
+  color: #182c61;
+}
+
+section .container {
+  align-items: flex-start;
+}
+
+section h2 {
+  font-family: "Bungee", sans-serif;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+section p {
+  margin-bottom: 8px;
+}
+
+/* Front store layout */
+.front-store {
+  margin-right: 32px;
+}
+
+/* Redes sociais */
+.social-links img {
+  width: 24px;
+}
+
+/* Contato */
+#contatos .container {
+  display: block;
+}
+
+#contatos .Contato-netholder {
+  display: block; /* Corrigido para manter layout vertical */
+  margin-top: 16px;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%; /* Ajustado para responsividade */
+  max-width: 320px; /* Define uma largura máxima */
+  margin-bottom: 16px; /* Espaçamento entre os elementos */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  resize: vertical; /* Permite redimensionamento apenas vertical */
+}
+
+form button {
+  background-color: #182c61;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+form button:hover {
+  background-color: #1455a0; /* Efeito hover */
+}
